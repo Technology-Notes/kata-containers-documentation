@@ -31,7 +31,7 @@ This document requires the presence of the ACRN hypervisor and Kata Containers o
 - For networking, ACRN supports either MACVTAP or TAP. If MACVTAP is not enabled in the Service OS, please follow the below steps to update the kernel:
 
   ```sh
-   $ git clone https://github.com/projectacrn/acrn-kernel.git
+   $ git clone --depth 1 https://github.com/projectacrn/acrn-kernel.git
    $ cd acrn-kernel
    $ cp kernel_config_sos .config
    $ sed -i "s/# CONFIG_MACVLAN is not set/CONFIG_MACVLAN=y/" .config

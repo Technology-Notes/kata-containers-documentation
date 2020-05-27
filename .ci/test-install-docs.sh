@@ -89,7 +89,7 @@ get_tests_repo()
 
 	mkdir -p "${kata_project_dir}"
 
-	git clone "${test_repo_url}" "${test_repo_dir}"
+	git clone --depth 1 "${test_repo_url}" "${test_repo_dir}"
 }
 
 # Delete all local github repo clones.

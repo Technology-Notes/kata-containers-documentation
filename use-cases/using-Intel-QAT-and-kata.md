@@ -254,7 +254,7 @@ your system before running the following commands. If you need to use a custom
 ```sh
 $ mkdir -p $OSBUILDER
 $ cd $OSBUILDER
-$ git clone https://github.com/kata-containers/osbuilder.git
+$ git clone --depth 1 https://github.com/kata-containers/osbuilder.git
 $ export ROOTFS_DIR=${OSBUILDER}/osbuilder/rootfs-builder/rootfs
 $ export EXTRA_PKGS='kmod'
 ```

@@ -126,7 +126,7 @@ Containers components to help with this, and then use `kubectl` on the host (tha
 configured for you) to deploy them:
 
 ```sh
-$ git clone https://github.com/kata-containers/packaging.git
+$ git clone --depth 1 https://github.com/kata-containers/packaging.git
 $ cd packaging/kata-deploy
 $ kubectl apply -f kata-rbac.yaml
 $ kubectl apply -f kata-deploy.yaml

@@ -28,7 +28,7 @@ Also, it's worth noting that NEMU only supports `x86_64` and `aarch64` architect
 ### Download and build
 
 ```bash
-$ git clone https://github.com/intel/nemu.git
+$ git clone --depth 1 https://github.com/intel/nemu.git
 $ cd nemu
 $ git fetch origin
 $ git checkout origin/experiment/automatic-removal

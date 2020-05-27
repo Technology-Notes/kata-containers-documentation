@@ -28,9 +28,9 @@ Containers, start DevStack, and set the environment variables to use
 ```sh
 $ sudo mkdir -p /opt/stack
 $ sudo chown $USER /opt/stack
-$ git clone https://github.com/openstack-dev/devstack /opt/stack/devstack
+$ git clone --depth 1 https://github.com/openstack-dev/devstack /opt/stack/devstack
 $ HOST_IP="$(ip addr | grep 'state UP' -A2 | tail -n1 | awk '{print $2}' | cut -f1 -d'/')"
-$ git clone https://github.com/openstack/zun /opt/stack/zun
+$ git clone --depth 1 https://github.com/openstack/zun /opt/stack/zun
 $ cat /opt/stack/zun/devstack/local.conf.sample \
 $     | sed "s/HOST_IP=.*/HOST_IP=$HOST_IP/" \
 $     > /opt/stack/devstack/local.conf
